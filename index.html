@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Business Assistance</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #2980b9;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #27ae60;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing {
+            background-color: #fff;
+            padding: 40px;
+            margin: 40px auto;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 1000px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .pricing h3 {
+            font-size: 60px;
+            color: #27ae60;
+            margin-bottom: 20px;
+        }
+
+        .pricing p {
+            font-size: 22px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .pricing button {
+            padding: 15px 30px;
+            background-color: #27ae60;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .pricing button:hover {
+            background-color: #2ecc71;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 15px;
+            background-color: #2980b9;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #3498db;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+
+        .feature-box h4 {
+            font-size: 24px;
+            color: #2980b9;
+        }
+
+        .feature-box p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .feature-box img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AI Business Assistance</h1>
+        <p>Revolutionize your business with AI-powered solutions</p>
+    </header>
+
+    <section>
+        <div class="pricing">
+            <h3>$5 / Month</h3>
+            <p>Unlock powerful AI tools and strategies to help your business grow, optimize operations, and boost profitability. Perfect for entrepreneurs, small businesses, and startups.</p>
+            <button onclick="document.getElementById('subscription-form').scrollIntoView();">Subscribe Now</button>
+        </div>
+
+        <h2>How AI Can Help Your Business</h2>
+        <div class="features">
+            <div class="feature-box">
+                <img src="https://via.placeholder.com/60" alt="Automation">
+                <h4>Automation</h4>
+                <p>Automate your workflows to save time and reduce costs.</p>
+            </div>
+            <div class="feature-box">
+                <img src="https://via.placeholder.com/60" alt="Analytics">
+                <h4>Advanced Analytics</h4>
+                <p>Leverage AI to make smarter business decisions with data-driven insights.</p>
+            </div>
+            <div class="feature-box">
+                <img src="https://via.placeholder.com/60" alt="Optimization">
+                <h4>Optimization</h4>
+                <p>Optimize marketing, sales, and operations for maximum impact.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>Sign up now to access personalized AI tools and strategies for your business!</p>
+            <form id="subscription-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="business-type">Business Type</label>
+                    <select id="business-type" name="business-type" required>
+                        <option value="">Select Your Business Type</option>
+                        <option value="startup">Startup</option>
+                        <option value="e-commerce">E-commerce</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Subscribe Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Business Assistance. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("subscription-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for subscribing! We will get in touch with you shortly.");
+            document.getElementById("subscription-form").reset();
+        });
+    </script>
+
+</body>
+</html>
